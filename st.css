@@ -60,20 +60,23 @@ body {
     color: white;
 }
 
-.nav{
-    border:1px solid #ccc;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+ul {
+    list-style-type: none;;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    padding: 0;
+    background-color: white;
 }
-.nav li{
-    display:inline;
+
+li.topnav {
+    display: inline;
 }
-.nav a{
-    display:inline-block;
-    padding:10px;
+
+li.dropdown {
+    display: inline-block;
 }
 
 .dropdown {
