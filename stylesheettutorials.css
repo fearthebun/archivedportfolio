@@ -5,6 +5,13 @@ body {
     width: 100%;
 }
 
+text {
+    margin:20%;
+    font-family: Verdana;
+    background-color:#f7f7f7;
+    width: 80%;
+}
+
 #header-img{
     display:block;
     margin:auto;
