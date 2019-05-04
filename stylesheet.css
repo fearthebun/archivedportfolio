@@ -31,7 +31,6 @@ body {
     overflow: hidden;
     background-color: #f7f7f7;
     width: 100%;
-    display: inline-block;
 }
 
 .topnav a {
@@ -48,8 +47,8 @@ body {
     color: white;
 }
 
-.topnav li {
-    float: left;
+li {
+    display: inline-block;
  }
 
 .topnav a.active {
@@ -59,7 +58,7 @@ body {
 
 
 .dropdown {
-    float: left;
+    display: inline-block;
     overflow: hidden;
 }
 
@@ -72,6 +71,7 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    text-align: centre;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
