@@ -9,7 +9,7 @@ body {
     display:block;
     margin:auto;
     height:auto;
-    width:100%;
+    max-width:100%;
 }
 
 #header-img2{
