@@ -5,6 +5,14 @@ body {
     width: 100%;
 }
 
+text {
+    margin:20%;
+    font-family: 'Quicksand', sans-serif;
+    background-color:#f7f7f7;
+    width: 80%;
+    text-align: center;
+}
+
 #header-img{
     display:block;
     margin:auto;
@@ -39,7 +47,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 25px;
 }
 
 .topnav a:hover {
@@ -59,7 +67,7 @@ body {
 }
 
 .dropdown .dropbtn {
-    font-size: 21px;
+    font-size: 25px;
     border: none;
     outline: none;
     color: #6b6b6b;
