@@ -35,13 +35,12 @@ body {
 }
 
 .topnav a {
-    float: left;
     color: #6b6b6b;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    display:inline-block;
+    display: inline-block;
 }
 
 .topnav a:hover {
