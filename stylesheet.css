@@ -41,6 +41,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    display:inline-block;
 }
 
 .topnav a:hover {
@@ -49,7 +50,7 @@ body {
 }
 
 li {
-    display: inline-block;
+    display: inline;
  }
 
 .topnav a.active {
