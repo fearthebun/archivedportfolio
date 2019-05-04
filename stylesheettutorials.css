@@ -1,6 +1,6 @@
 body {
     margin:0;
-    font-family: Verdana;
+    font-family:  'Quicksand', sans-serif;   
     background-color:#f7f7f7;
     width: 100%;
 }
@@ -35,7 +35,7 @@ text {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 21px;
 }
 
 .topnav a:hover {
@@ -49,7 +49,7 @@ text {
 }
 
 .dropdown .dropbtn {
-    font-size: 17px;
+    font-size: 21px;
     border: none;
     outline: none;
     color: #6b6b6b;
