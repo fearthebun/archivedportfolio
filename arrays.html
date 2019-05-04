@@ -23,47 +23,6 @@
             <a href="oop.html">OOP</a>
             <a href="arrays.html">Arrays and ArrayLists</a>
             <a href="recursion.html">Recursion</a>
-            <html>
-
-<head>
-    <link rel="stylesheet" href="stylesheettutorials.css">
-</head>
-
-
-<body>
-<div class="header">
-    <img id = "header-img" src="header.jpg">
-</div>
-
-<div class="topnav">
-    <a href = "index.html">Home</a>
-    <a href = "aboutMe.html">About Me</a>
-    <div class="dropdown">
-        <button class="dropbtn">Tutorials
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="oop.html">OOP</a>
-            <a href="arrays.html">Arrays and ArrayLists</a>
-            <a href="recursion.html">Recursion</a>
-            <a href="searches.html">Searches</a>
-            <a href="sorts.html">Sorts</a>
-        </div>
-    </div>
-    <a href="#about">My Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
-
-
-<div class="head2">
-    <img id = "header-img2" img src = "recursion.jpg">
-</div>
-
-
-Why it do me like this reeee.
-
-</html>
-
         </div>
     </div>
     <a href="#about">My Projects</a>
@@ -71,10 +30,15 @@ Why it do me like this reeee.
 </div>
 
 <p>
-    Arrays
-    A data structure used to implement a list object, where the elements in the list are of the same type: int, String, char, double, boolean, etc. For an array of N elements in Java, index values (“subscripts”) go from 0 to N−1. If an array index smaller than 0 or ≥ N is accessed, and ArrayOutOfBoundsExcept is thrown.
+    <h1>Arrays</h1>
+    <br>
+    A data structure used to implement a list object, where the elements in the list 
+    are of the same type: int, String, char, double, boolean, etc. For an array of N 
+    elements in Java, index values (“subscripts”) go from 0 to N−1. If an array index 
+    smaller than 0 or ≥ N is accessed, and ArrayOutOfBoundsExcept is thrown.
     
-    To initialize an array, which is treated as an object, the keyword new must be used. An array can be initialized one of three ways:
+    To initialize an array, which is treated as an object, the keyword new must be used. 
+    An array can be initialized one of three ways:
     
         int [] arr = new int [5];
     
@@ -83,32 +47,45 @@ Why it do me like this reeee.
         int [] arr; 
         arr = new int [5];
     
-    Another way to initialize arrays is to declare an array with an initializer list if the array’s values are known:
+    Another way to initialize arrays is to declare an array with an initializer list if 
+    the array’s values are known:
         int [] arr = {0, 1, 2, 3, 4};
     
-    Once an array is initialized, its size cannot be changed unless it is reinitialized. This, however, will cause previous data stored within it to be discarded. If an array is not initialized, it is automatically initialized; in a primitive numeric data type array, elements are set to 0, for boolean they are set to false, and for object references they are set to null. 
+    Once an array is initialized, its size cannot be changed unless it is reinitialized. 
+    This, however, will cause previous data stored within it to be discarded. If an array 
+    is not initialized, it is automatically initialized; in a primitive numeric data type 
+    array, elements are set to 0, for boolean they are set to false, and for object references 
+    they are set to null. 
     
     To find the length of an array, simply use length, a final public instance variable:
         System.out.print (arr.length);    //will print out 5
     
-    This allows for the traversal through and modification of an array of an unknown size with a for loop:
+    This allows for the traversal through and modification of an array of an unknown size 
+    with a for loop:
         for (int x = 0; x < arr.length; x++)
         {
             System.out.println (arr[x]);    //will print out all elements in the array.
             arr[x] += 1;    //adds 1 to the element
         }
     
-    Another way to traverse through an array is the for-each loop. This loop, however, cannot replace or remove elements unless it is an array of objects and mutator methods of that object are being used. A correct usage of the for-each loop would be as follows:
+    Another way to traverse through an array is the for-each loop. This loop, however, cannot 
+    replace or remove elements unless it is an array of objects and mutator methods of that object 
+    are being used. A correct usage of the for-each loop would be as follows:
         int count = 0;
         for (int x : arr)
             if (x < 0)
                 count++;
         System.out.print (count);    //will print out the number of negative numbers in the array
     
-    Arrays are, as mentioned previously, treated as objects in Java. Therefore, passing an array as a parameter means it is passed by reference. Any changes made in the method to the array is made to the actual elements of the array.
+    Arrays are, as mentioned previously, treated as objects in Java. Therefore, passing an array 
+    as a parameter means it is passed by reference. Any changes made in the method to the array is 
+    made to the actual elements of the array.
     
-    Two-Dimensional Array
-    A two-dimensional array, also called a matrix, is essentially coordinate grid or array elements. It is useful for representing data like classroom seating, a table, or a maze. As with a regular array, 2D arrays can be initialized with or without length, with length, or with an initializer list:
+    <h1>Two-Dimensional Arrays</h1>
+    A two-dimensional array, also called a matrix, is essentially coordinate grid or array elements. 
+    It is useful for representing data like classroom seating, a table, or a maze. As with a regular 
+    array, 2D arrays can be initialized with or without length, with length, or with an initializer 
+    list:
         int [][] arr;
         arr = new int [3][3];
     
@@ -126,7 +103,9 @@ Why it do me like this reeee.
     To access elements in a 2D array, simply access the row, then column:
         System.out.println (arr[0][2]);    //will print out 6
     
-    Doing arr.length in this scenario would give the number of rows, which, in this case, would be 3. To find the number of columns, use arr[k].length, where k is larger than or equal to 0 but smaller than arr.length.
+    Doing arr.length in this scenario would give the number of rows, which, in this case, 
+    would be 3. To find the number of columns, use arr[k].length, where k is larger than or 
+    equal to 0 but smaller than arr.length.
     
     There are 3 ways to traverse a 2D array:
     row-column (accessing, modifying class objects, or replacing elements)
@@ -145,24 +124,30 @@ Why it do me like this reeee.
     for (int c = 0; c < arr [2].length; c++)
     mat[2][c] += 1;    //adds 1 to each element in the last row
     
-    ArrayLists
-    An ArrayList is simply a resizable array that is both memory efficient and run-time efficient. It implements the List interface. When the ArrayList class is called, it requires a type parameter:
+    <h1>ArrayLists</h1>
+    An ArrayList is simply a resizable array that is both memory efficient and run-time 
+    efficient. It implements the List interface. When the ArrayList class is called, it 
+    requires a type parameter:
         List <String> arrList = new ArrayList <String>();
     
     This example ArrayList can only store String objects.
     
-    All of the type information in a program with generic classes is examined at compile time. After compilation the type information is erased. This feature of generic classes is known as erasure. During execution of the program, any attempt at incorrect casting will lead to a ClassCastException (ripped directly off the textbook lol).
-    
     Some important methods useful when handling ArrayLists are the following: 
-    add (Object o)    //adds the object to the end of the list if it is of the same object type as the list; otherwise, a ClassCastException is thrown
-    add (int index, Object o)  //inserts given object at the index given; pushes all elements after the index back by 1
+    add (Object o)    //adds the object to the end of the list if it is of the same object type 
+                        as the list; otherwise, a ClassCastException is thrown
+
+    add (int index, Object o)  //inserts given object at the index given; pushes all 
+                                elements after the index back by 1
+
     remove (int index)    //removes element at given index
+
     size ()    //returns the length of the list
+
     get (int index)    //returns the element at given index
+
     set (int index, Object o)    //replaces the object at given index with given object
     
     Traversing through an ArrayList is usually done with a for-each loop.
-    
     
 </p>
 </html>
