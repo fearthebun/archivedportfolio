@@ -12,18 +12,7 @@ body {
     max-width:100%;
 }
 
-#header-img2{
-    display:block;
-    margin:auto;
-    height:auto;
-    max-width:100%;
-}
-
 .header{
-    width: 100%;
-}
-
-.head2{
     width: 100%;
 }
 
@@ -46,12 +35,6 @@ body {
     background-color: #ddd;
     color: white;
 }
-
-.topnav a.active {
-    background-color: #54595f;
-    color: white;
-}
-
 
 .dropdown {
     float: left;
