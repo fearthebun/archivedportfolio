@@ -76,10 +76,10 @@
     with a for loop:
     <br>
     <br>
-        for (int x = 0; x < arr.length; x++)
-        {
-            System.out.println (arr[x]);    //will print out all elements in the array.
-            arr[x] += 1;    //adds 1 to the element
+        for (int x = 0; x < arr.length; x++)<br>
+        {<br>
+            System.out.println (arr[x]);    //will print out all elements in the array.<br>
+            arr[x] += 1;    //adds 1 to the element<br>
         }
     <br>
     <br>
@@ -88,10 +88,10 @@
     are being used. A correct usage of the for-each loop would be as follows:
     <br>
     <br>
-        int count = 0;
-        for (int x : arr)
-            if (x < 0)
-                count++;
+        int count = 0;<br>
+        for (int x : arr)<br>
+            if (x < 0)<br>
+                count++;<br>
         System.out.print (count);    //will print out the number of negative numbers in the array
     <br>
     <br>
@@ -100,47 +100,49 @@
     made to the actual elements of the array.</text>
     
     <h1>Two-Dimensional Arrays</h1>
-A two-dimensional array, also called a matrix, is essentially coordinate grid or array elements. 
+<text>A two-dimensional array, also called a matrix, is essentially coordinate grid or array elements. 
     It is useful for representing data like classroom seating, a table, or a maze. As with a regular 
     array, 2D arrays can be initialized with or without length, with length, or with an initializer 
     list:
+    <br>
+    <br>
         int [][] arr;
-        arr = new int [3][3];
+        arr = new int [3][3];<br><br>
     
-        int [][] arr = new int [3][3];
+        int [][] arr = new int [3][3];<br><br>
     
-        int [][] arr = {{0, 1, 2}
-                    {3, 4, 5}
-            {6, 7, 8}};
+        int [][] arr = {{0, 1, 2}<br>
+                    {3, 4, 5}<br>
+            {6, 7, 8}};<br><br>
     
-    In the last example, we can see that:
-        arr [0] contains {0, 1, 2}
-        arr [1] contains {3, 4, 5}
-        arr [2] contains {6, 7, 8}
+    In the last example, we can see that:<br>
+        arr [0] contains {0, 1, 2}<br>
+        arr [1] contains {3, 4, 5}<br>
+        arr [2] contains {6, 7, 8}<br>
     
-    To access elements in a 2D array, simply access the row, then column:
-        System.out.println (arr[0][2]);    //will print out 6
+    To access elements in a 2D array, simply access the row, then column:<br>
+        System.out.println (arr[0][2]);    //will print out 6<br>
     
     Doing arr.length in this scenario would give the number of rows, which, in this case, 
     would be 3. To find the number of columns, use arr[k].length, where k is larger than or 
-    equal to 0 but smaller than arr.length.
+    equal to 0 but smaller than arr.length.<br>
     
-    There are 3 ways to traverse a 2D array:
-    row-column (accessing, modifying class objects, or replacing elements)
-    for (int r = 0; r < arr.length; r++)
-    {
-        for (int c = 0; c < arr[r].length; c++)
-        {
-            arr [r][c] += 1;    //adds 1 to each element in the array
-        }
-    }
-    for-each loops (accessing, modifying class objects, but no replacement)
-    for (int [] row : arr)
-        for (int element : row)
-            System.out.println (element);    //prints out each element in the array 
-    row-by-row array processing (accessing, modifying, or replacing)
-    for (int c = 0; c < arr [2].length; c++)
-    mat[2][c] += 1;    //adds 1 to each element in the last row
+    There are 3 ways to traverse a 2D array:<br>
+    row-column (accessing, modifying class objects, or replacing elements)<br>
+    for (int r = 0; r < arr.length; r++)<br>
+    {<br>
+        for (int c = 0; c < arr[r].length; c++)<br>
+        {<br>
+            arr [r][c] += 1;    //adds 1 to each element in the array<br>
+        }<br>
+    }<br><br>
+    for-each loops (accessing, modifying class objects, but no replacement)<br>
+    for (int [] row : arr)<br>
+        for (int element : row)<br>
+            System.out.println (element);    //prints out each element in the array <br><br>
+    row-by-row array processing (accessing, modifying, or replacing)<br>
+    for (int c = 0; c < arr [2].length; c++)<br>
+    mat[2][c] += 1;    //adds 1 to each element in the last row</text>
     
     <h1>ArrayLists</h1>
 An ArrayList is simply a resizable array that is both memory efficient and run-time 
