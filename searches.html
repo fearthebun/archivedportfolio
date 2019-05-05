@@ -28,8 +28,23 @@
         </div>
     </div>
     <a href="#about">My Projects</a>
+    <a href="#about">Bibliography</a>
 </div>
-
+<div style = "margin-top : 30px; margin-left: 120px; margin-right : 100px; margin-bottom : 50px;">
 <h1>Searches</h1>
-
+    <text><h3>Sequential Search</h3>
+    A sequential search simply traverses an entire array, comparing each element
+        with a key until it is found. This searching algorithm has a time complexity of O(N),
+        as it only traverses through the array once.
+    <h3>Binary Search</h3>
+If searching through a sorted array, binary search’s divide-and-conquer approach
+    is far more time efficient than sequential search. Binary search uses a recursive
+    method that checks the middle of the array from 0 to array length, and compares the key
+    to the element. Say the array is sorted in ascending order. If the key is not equal to the element,
+    it checks if it is smaller or larger than the current element. If the key is smaller, it continues the
+    recursion with a smaller subarray of 0 to middle-1 as there is no possibility of it being in the second
+    half of the array where the elements will be increasing in value. The opposite is true if the key is larger
+    than the middle element. This recursion continues until the key is found or the array can no longer be traversed
+    further. Binary search has a time complexity of O(log N).</text>
+</div>
 </html>
