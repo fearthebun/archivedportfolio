@@ -32,6 +32,39 @@
 
 <div style = "margin-top : 30px; margin-left: 120px; margin-right : 100px; margin-bottom : 50px;">
 <h1>Recursion</h1>
+<text>In Java, a recursive method is a method that calls itself. Recursive methods are used as a divide-and-conquer solution to problems.
+<br>
+    Every recursive method has two main parts: a base case, and a non-base case. A base case essentially tells the program when to terminate. A non-base case continues the recursion, its final goal to move the algorithm closer to the base case. Here is an example of a recursive method:
+    <br><br>
+    <pre>public String reverseString(String s) {<br>
+    if (s.indexOf(" ") != -1)<br>
+    return s.substring(s.lastIndexOf(" ") + 1) + "\n" + reverseString(s.substring(0, s.lastIndexOf(" ")));<br>
 
+    return s;<br>
+    }</pre>
+    <br>
+    This method, when printed, reverses the words in a sentence until it reaches the end.
+    <br>
+    <br>
+    If the return statement were to be replaced with a print statement, a process known as stacking would occur. The program must remember to print the statements after all the recursion has completed, and it does so by stacking the pending statements and printing them at the end.
+    <br>
+    <br>
+    There are 3 types of recursion:
+    <ol type="1">
+        <li>Recursion: a singular method that calls itself continuously until the program reaches the base case.</li><br>
+        <li>Mutual recursion: recursion with two methods, where one calls the other.</li><br>
+        <li>Tail recursion: recursion in which the return statement with the method call is the last line of the method.</li>
+    </ol>
+    <br>
+    In order for a problem to be solved recursively, it must have 3 things:
+
+    <ol type="1">
+        <li>The problem must be capable of being reduced to small and repetitive elements</li><br>
+        <li>The solution of the problem must be recognizable and able to be dealt with</li><br>
+        <li>A larger result from the component elements must be achievableilk</li>
+    </ol>
+    <br>
+    Recursion has many benefits. These include shorter solutions that are reflective of the algorithm. However, with these benefits comes the issue of space and time because recursion calls an entire function repeatedly.
+</text>
 </div>
 </html>
