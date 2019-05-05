@@ -30,55 +30,61 @@
     <a href="#about">My Projects</a>
 </div>
 
-<div style = "margin: 40px;">
+<div style = "margin: 60px;">
     <h1>Arrays</h1>
     <br>
 
-    <text>A data structure used to implement a list object, where the elements in the list 
+    <text>An array is a data structure used to implement a list object, where the elements in the list 
     are of the same type: int, String, char, double, boolean, etc. For an array of N 
     elements in Java, index values (“subscripts”) go from 0 to N−1. If an array index 
     smaller than 0 or ≥ N is accessed, and ArrayOutOfBoundsExcept is thrown.
+
+    <br>
     
     To initialize an array, which is treated as an object, the keyword new must be used. 
     An array can be initialized one of three ways:
-    
+    <br>
         int [] arr = new int [5];
     
         int arr [] = new int [5];
     
         int [] arr; 
         arr = new int [5];
-    
+    <br>
     Another way to initialize arrays is to declare an array with an initializer list if 
     the array’s values are known:
+    <br>
         int [] arr = {0, 1, 2, 3, 4};
-    
+    <br>
     Once an array is initialized, its size cannot be changed unless it is reinitialized. 
     This, however, will cause previous data stored within it to be discarded. If an array 
     is not initialized, it is automatically initialized; in a primitive numeric data type 
     array, elements are set to 0, for boolean they are set to false, and for object references 
     they are set to null. 
-    
+    <br>
     To find the length of an array, simply use length, a final public instance variable:
+    <br>
         System.out.print (arr.length);    //will print out 5
-    
+    <br>
     This allows for the traversal through and modification of an array of an unknown size 
     with a for loop:
+    <br>
         for (int x = 0; x < arr.length; x++)
         {
             System.out.println (arr[x]);    //will print out all elements in the array.
             arr[x] += 1;    //adds 1 to the element
         }
-    
+    <br>
     Another way to traverse through an array is the for-each loop. This loop, however, cannot 
     replace or remove elements unless it is an array of objects and mutator methods of that object 
     are being used. A correct usage of the for-each loop would be as follows:
+    <br>
         int count = 0;
         for (int x : arr)
             if (x < 0)
                 count++;
         System.out.print (count);    //will print out the number of negative numbers in the array
-    
+    <br>
     Arrays are, as mentioned previously, treated as objects in Java. Therefore, passing an array 
     as a parameter means it is passed by reference. Any changes made in the method to the array is 
     made to the actual elements of the array.</text>
