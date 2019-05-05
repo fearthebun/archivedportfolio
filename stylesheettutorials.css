@@ -8,10 +8,11 @@ body {
 text {
     font-family: 'Quicksand', sans-serif;
     background-color:#f7f7f7;
-    font-size: 16px;
-    text-decoration: bold; 
-    text-align: center;
-    margin: 20%;
+    text-align: left;
+font-size: 24px;
+font-weight: 600;
+margin-top: 40px;
+margin-bottom: 20px;
 }
 
 h1{
