@@ -12,16 +12,16 @@ text {
 font-size: 18px;
 margin-top: 40px;
 margin-bottom: 20px;
-line-height:20px; 
+line-height:25px;
 }
 
 pre {
-    font-family:  'Anaheim', sans-serif;
+    font-family:  monospace, monospace;
     background-color:#f7f7f7;
 font-size: 16px;
-margin-top: 40px;
+margin-top: 10px;
 margin-bottom: 20px;
-line-height:20px;
+    margin-left : 35px;
 }
 
 #header-img{
