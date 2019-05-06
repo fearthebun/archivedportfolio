@@ -21,14 +21,14 @@ h1{
     display:block;
     margin:auto;
     height:auto;
-    width:100%;
+    max-width:100%;
 }
 
 #header-img2{
     display:block;
     margin:auto;
     height:auto;
-    max-width:100%;
+    width:100%;
 }
 
 .header{
