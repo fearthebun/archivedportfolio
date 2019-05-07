@@ -1,11 +1,11 @@
 body {
     margin:0;
-    font-family: 'Quicksand', sans-serif;   
+    font-family: 'Quicksand', sans-serif;
     background-color:#f7f7f7;
     width: 100%;
 }
 
-p {
+text {
     font-family: 'Quicksand', sans-serif;
     background-color:#f7f7f7;
     text-align: left;
@@ -60,7 +60,7 @@ h1{
 }
 
 .topnav a.active {
-    background-color: #050c12;
+    background-color: #50575d;
     color: white;
 }
 
