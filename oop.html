@@ -31,6 +31,44 @@
     <a href="bibliography.html">Bibliography</a>
 </div>
 
-<h1>OOP</h1>
+<div style = "margin-top : 30px; margin-left: 120px; margin-right : 100px; margin-bottom : 50px;">
+    <h1>OOP</h1>
+    <br>
+
+    <text>Object-Oriented Programming, otherwise known as OOP, is a style of programming which aims for a real-world
+        simulation of the uses of objects. Objects are created, then manipulated. Every object has a state and behaviour.
+        For example, some states an object “Animal” could have is colour, weight, name, or hunger level. Behaviours for
+        the same object could include eating, moving, and sleeping.
+<br>
+        Now, these objects must be set up somehow. That’s where classes come in -
+        software blueprints from which objects can be created. Objects states are declared
+        with instance variables which are initialized with class constructors, and behaviours made with methods.
+        An example of a class is the following:
+        <br>
+        <pre>public class Animal {
+    private String colour;
+    private double weight;
+    private String name;
+    private int hungerLevel;
+
+public Animal(String c, double w, String n)
+{
+    colour = c;
+    weight = w;
+    name = n;
+    hungerLevel = 10;
+}
+}
+</pre><br>
+        To create a new Animal object, simply instantiate a new Animal object in the main method:<br>
+        <pre>public static void main (String [] args)
+{
+    Animal a = new Animal (“white”, 1.5, “Fluffy”);
+}
+</pre><br>
+        Now that the basics of object-oriented programming have been covered, some core concepts must be explored in order to fully understand what object-oriented programming can really achieve.
+        Core concepts of object-oriented programming include inheritance, encapsulation, abstraction, and polymorphism.<br>
+    </text>
+</div>
 
 </html>
