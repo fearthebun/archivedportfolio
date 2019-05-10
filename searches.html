@@ -33,10 +33,25 @@
 </div>
 <div style = "margin-top : 30px; margin-left: 120px; margin-right : 100px; margin-bottom : 50px;">
 <h1>Searches</h1>
-    <text><h3>Sequential Search</h3>
+    <br>
+    <text>When using arrays, you might come across a situation where you must look for a specific value within
+        an array. That is what searching is useful for. There are two types of searches tested in AP.
+    <br>
+    <h3>Sequential Search</h3>
     A sequential search simply traverses an entire array, comparing each element
-        with a key until it is found. This searching algorithm has a time complexity of O(N),
+        with a key until it is found. This searching algorithm has a time complexity of O(n),
         as it only traverses through the array once.
+        <br>
+
+        <pre>       public boolean sequentialSearch (int [] arr, int valSearch){
+            for (int x = 0; x < arr.length; x++)
+            {
+                if (arr [x] == valSearch}
+                    return true;
+            }
+                return false;
+            }
+        </pre>
     <h3>Binary Search</h3>
 If searching through a sorted array, binary search’s divide-and-conquer approach
     is far more time efficient than sequential search. Binary search uses a recursive
@@ -46,6 +61,34 @@ If searching through a sorted array, binary search’s divide-and-conquer approa
     recursion with a smaller subarray of 0 to middle-1 as there is no possibility of it being in the second
     half of the array where the elements will be increasing in value. The opposite is true if the key is larger
     than the middle element. This recursion continues until the key is found or the array can no longer be traversed
-    further. Binary search has a time complexity of O(log N).</text>
+    further. Binary search has a time complexity of O(log n).
+    <br>
+    <br>
+        <pre>       public boolean binarySearch (int[] arr, int valSearch) {
+            if (arr.length == 0) {
+                return false;
+            }
+            int low = 0;
+            int high = arr.length - 1;
+
+            while(low <= high)
+            {
+                int middle = (low + high) / 2;
+                if (valSearch > arr [middle])
+                {
+                    low = middle + 1;
+                }
+                else if (valSearch < arr [middle])
+                {
+                    high = middle - 1;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            return false;
+        }</pre>
+    </text>
 </div>
 </html>

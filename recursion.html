@@ -38,12 +38,12 @@
 <br>
     Every recursive method has two main parts: a base case, and a non-base case. A base case essentially tells the program when to terminate. A non-base case continues the recursion, its final goal to move the algorithm closer to the base case. Here is an example of a recursive method:
     <br><br>
-    <pre>public String reverseString(String s) {<br>
-    if (s.indexOf(" ") != -1)<br>
-    return s.substring(s.lastIndexOf(" ") + 1) + "\n" + reverseString(s.substring(0, s.lastIndexOf(" ")));<br>
+    <pre>       public String reverseString(String s) {
+            if (s.indexOf(" ") != -1)
+            return s.substring(s.lastIndexOf(" ") + 1) + "\n" + reverseString(s.substring(0, s.lastIndexOf(" ")));
 
-    return s;<br>
-    }</pre>
+                return s;
+        }</pre>
     <br>
     This method, when printed, reverses the words in a sentence until it reaches the end.
     <br>
@@ -67,6 +67,9 @@
     </ol>
     <br>
     Recursion has many benefits. These include shorter solutions that are reflective of the algorithm. However, with these benefits comes the issue of space and time because recursion calls an entire function repeatedly.
+<br>
+    <br>
+    You can click <a href = "https://github.com/Fearthebun/RecursionExample">here</a> to view an assignment done this semester with recursion which exits any given maze.
 </text>
 </div>
 </html>
