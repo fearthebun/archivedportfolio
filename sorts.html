@@ -41,7 +41,24 @@
         Insertion sort is a sorting algorithm which goes through array elements one by one and places it
         in the correct index within the sorted portion of the array, which starts off being the first element.
         It is similar to how one would sort a hand of cards. This sorting algorithm has a
-        time complexity of O(n^2) for an average case, and is best used on smaller sized arrays.
+        time complexity of O(n^2) for an average case and a worst case where the array is sorted in
+        reverse order, or O(n) for a best case where the array is already sorted. This sorting
+        algorithm is best used on smaller sized arrays, as it is efficient, easy to understand, and only requires a constant amount of
+        additional memory space.
+
+        <pre>       public void sortCards (int[] cards){
+            int n = cards.length;
+            for (int x = 1; x < n; x++) {
+                int currentCard = cards[x];
+                int i = x;
+                while (i > 0 && cards[i - 1] > currentCard) {
+                    cards[i] = cards[i - 1];
+                    i--;
+                }
+                cards[i] = currentCard;
+            }
+        }
+</pre>
     <h3>Mergesort</h3>
         Mergesort is a divide-and-conquer sorting algorithm that is considerably faster than selection and insertion sort.
         This algorithm works by using a recursive method to break the array into subarrays, all a length of 1 which are “sorted”.
