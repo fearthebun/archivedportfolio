@@ -36,7 +36,7 @@
     <h1>Arrays</h1>
     <br>
 
-    <text>An array is a data structure used to implement a list object, where the elements in the list 
+    <text>An array is a data structure used to implement a list object, where the elements in the list
     are of the same type: int, String, char, double, boolean, etc. For an array of N 
     elements in Java, index values (“subscripts”) go from 0 to N−1. If an array index 
     smaller than 0 or ≥ N is accessed, and ArrayOutOfBoundsExcept is thrown.
@@ -46,20 +46,16 @@
     To initialize an array, which is treated as an object, the keyword new must be used. 
     An array can be initialized one of three ways:
     <br>
-    <br>
-        <pre>int [] arr = new int [5];</pre><br>
+        <pre>        int [] arr = new int [5];
     
-        <pre>int arr [] = new int [5];</pre><br>
+        int arr [] = new int [5];
     
-        <pre>int [] arr;
+        int [] arr;
         arr = new int [5];</pre><br>
-    <br>
     Another way to initialize arrays is to declare an array with an initializer list if 
     the array’s values are known:
     <br>
-    <br>
-        <pre>int [] arr = {0, 1, 2, 3, 4};</pre>
-    <br>
+        <pre>       int [] arr = {0, 1, 2, 3, 4};</pre>
     <br>
     Once an array is initialized, its size cannot be changed unless it is reinitialized. 
     This, however, will cause previous data stored within it to be discarded. If an array 
@@ -70,31 +66,25 @@
     <br>
     To find the length of an array, simply use length, a final public instance variable:
     <br>
-    <br>
-        <pre>System.out.print (arr.length);    //will print out 5</pre>
-    <br>
+        <pre>       System.out.print (arr.length);    //will print out 5</pre>
     <br>
     This allows for the traversal through and modification of an array of an unknown size 
     with a for loop:
     <br>
-    <br>
-        <pre>for (int x = 0; x < arr.length; x++){<br>
-        System.out.println (arr[x]);    //will print out all elements in the array.<br>
-        arr[x] += 1;    //adds 1 to the element<br>
-      }</pre>
-    <br>
+        <pre>       for (int x = 0; x < arr.length; x++){
+                System.out.println (arr[x]);    //will print out all elements in the array.
+                arr[x] += 1;    //adds 1 to the element
+        }</pre>
     <br>
     Another way to traverse through an array is the for-each loop. This loop, however, cannot 
     replace or remove elements unless it is an array of objects and mutator methods of that object 
     are being used. A correct usage of the for-each loop would be as follows:
     <br>
-    <br>
-        <pre>int count = 0;<br>
-        for (int x : arr)<br>
-            if (x < 0)<br>
-                count++;</pre><br>
-        System.out.print (count);    //will print out the number of negative numbers in the array
-    <br>
+        <pre>        int count = 0;
+        for (int x : arr)
+            if (x < 0)
+                count++;</pre>
+        System.out.print (count);    //will print out the number of negative numbers in the array</text>
     <br>
     Arrays are, as mentioned previously, treated as objects in Java. Therefore, passing an array 
     as a parameter means it is passed by reference. Any changes made in the method to the array is 
@@ -106,23 +96,22 @@
     array, 2D arrays can be initialized with or without length, with length, or with an initializer 
     list:
     <br>
-    <br>
-    <pre>int [][] arr;
-        arr = new int [3][3];</pre><br><br>
+    <pre>        int [][] arr;
+        arr = new int [3][3];
 
-    <pre>int [][] arr = new int [3][3];</pre><br><br>
+        int [][] arr = new int [3][3];
 
-    <pre>int [][] arr = {{0, 1, 2}<br>
-                    {3, 4, 5}<br>
-            {6, 7, 8}};</pre><br><br>
+        int [][] arr = {{0, 1, 2}
+                        {3, 4, 5}
+                        {6, 7, 8}};</pre>
     
     In the last example, we can see that:<br>
-    <pre>arr [0] contains {0, 1, 2}</pre><br>
-        <pre>arr [1] contains {3, 4, 5}</pre><br>
-        <pre>arr [2] contains {6, 7, 8}</pre><br>
+    <pre>        arr [0] contains {0, 1, 2}
+        arr [1] contains {3, 4, 5}
+        arr [2] contains {6, 7, 8}</pre><br>
     
     To access elements in a 2D array, simply access the row, then column:<br>
-    <pre>System.out.println (arr[0][2]);    //will print out 6</pre><br>
+    <pre>       System.out.println (arr[0][2]);    //will print out 6</pre><br>
     
     Doing arr.length in this scenario would give the number of rows, which, in this case, 
     would be 3. To find the number of columns, use arr[k].length, where k is larger than or 
@@ -130,43 +119,41 @@
     
     There are 3 ways to traverse a 2D array:<br>
     row-column (accessing, modifying class objects, or replacing elements)<br>
-    <pre>for (int r = 0; r < arr.length; r++)
-    {<br>
-        for (int c = 0; c < arr[r].length; c++)
-        {<br>
-            arr [r][c] += 1;    //adds 1 to each element in the array<br>
-        }<br>
-    }</pre><br><br>
+    <pre>       for (int r = 0; r < arr.length; r++) {
+            for (int c = 0; c < arr[r].length; c++) {
+                arr [r][c] += 1;    //adds 1 to each element in the array
+            }
+        }</pre><br><br>
     for-each loops (accessing, modifying class objects, but no replacement)<br>
-    <pre>for (int [] row : arr)<br>
-        for (int element : row)<br>
-        System.out.println (element);    //prints out each element in the array</pre> <br><br>
+    <pre>       for (int [] row : arr)
+            for (int element : row)
+                System.out.println (element);    //prints out each element in the array</pre> <br><br>
     row-by-row array processing (accessing, modifying, or replacing)<br>
-    <pre>for (int c = 0; c < arr [2].length; c++)<br>
-    mat[2][c] += 1;    //adds 1 to each element in the last row</pre></text>
+    <pre>       for (int c = 0; c < arr [2].length; c++)
+            mat[2][c] += 1;    //adds 1 to each element in the last row</pre></text>
     
     <h1>ArrayLists</h1>
 <text>An ArrayList is simply a resizable array that is both memory efficient and run-time
     efficient. It implements the List interface. When the ArrayList class is called, it 
     requires a type parameter:
-        List &lt;String&gt; arrList = new ArrayList &lt;String&gt;();
+    <pre>       List &lt;String&gt; arrList = new ArrayList &lt;String&gt;();</pre>
     
     This example ArrayList can only store String objects.
     
     Some important methods useful when handling ArrayLists are the following:
-    <pre>add (Object o)    //adds the object to the end of the list if it is of the same object type
-                        as the list; otherwise, a ClassCastException is thrown
+    <pre>        add (Object o)    //adds the object to the end of the list if it is of the same object type
+                            as the list; otherwise, a ClassCastException is thrown
 
-    add (int index, Object o)  //inserts given object at the index given; pushes all 
-                                elements after the index back by 1
+        add (int index, Object o)  //inserts given object at the index given; pushes all
+                                     elements after the index back by 1
 
-    remove (int index)    //removes element at given index
+        remove (int index)    //removes element at given index
 
-    size ()    //returns the length of the list
+        size ()    //returns the length of the list
 
-    get (int index)    //returns the element at given index
+        get (int index)    //returns the element at given index
 
-    set (int index, Object o)    //replaces the object at given index with given object</pre>
+        set (int index, Object o)    //replaces the object at given index with given object</pre>
     
         Traversing through an ArrayList is usually done with a for-each loop.</text>
         </div>
