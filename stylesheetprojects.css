@@ -5,14 +5,6 @@ body {
     width: 100%;
 }
 
-text {
-    font-family: 'Quicksand', sans-serif;
-    background-color:#f7f7f7;
-    text-align: left;
-    font-size: 100px;
-    line-height:25px;
-}
-
 h1{
     text-align: center;
 }
